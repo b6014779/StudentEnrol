@@ -6,7 +6,7 @@ class Course {
 
 	String title
 
-	String leader
+	Leader leader
 
 	String code
 
@@ -21,6 +21,19 @@ class Course {
 	Double tuitionFees
 
 	String studyMode
+
+	
+
+	double calculatedFees(){
+
+	4*tuitionFees
+		}
+
+	String toString(){
+
+	return title
+
+	}		
 
     static constraints = {
 		title nullable: false, blank: false

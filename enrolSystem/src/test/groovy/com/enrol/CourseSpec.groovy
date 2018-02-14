@@ -11,8 +11,15 @@ class CourseSpec extends Specification implements DomainUnitTest<Course> {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void "totalFees"() {
+	
+	when: "A Course has title and fees"
+	
+		def computing=new Course(title:'BSc Hons Computing',tuitionFees:9000)
+	
+	then: "The calculatedFees method will total fees "
+
+	computing.calculatedFees()	
+
     }
 }

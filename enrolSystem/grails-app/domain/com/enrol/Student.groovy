@@ -16,7 +16,13 @@ class Student {
 
 	String password
 
-	String course
+	Course course
+
+	String toString(){
+
+		return "$name, $studentID, $course"
+		
+			}	
 
     static constraints = {
 		name nullable: false, blank: false
